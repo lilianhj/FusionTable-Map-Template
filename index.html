@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class='navbar-brand' href='index.html'>Searchable Map Template</a>
+          <a class='navbar-brand' href='index.html'>Chicago Parks Public Art Searchable Map</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -36,7 +36,7 @@
     <div class='container-fluid'>
       <div class='row'>
         <div class='col-md-4'>
-          <p>This is a demo of <a href='http://derekeder.com'>Derek Eder's</a> <a href='http://derekeder.com/searchable_map_template/'>Searchable Map Template</a> using Google <a href='http://support.google.com/fusiontables/answer/2571232?hl=en&ref_topic=1652595'>Fusion Tables</a>. Use this section to give a little context to your map.</p>
+          <p>This is a searchable map of public art in Chicago parks. Dataset downloaded from the City of Chicago's data portal <a href="https://data.cityofchicago.org/Parks-Recreation/Parks-Public-Art/sj6t-9cju">here</a>.</p>
           <div class='well'>
             <h4>
               Address <small>(<a id='find_me' href='#'>find me</a>)</small>
@@ -56,7 +56,7 @@
               </label>
             </p>
 
-            <br />
+<!--             <br />
             <h4>Custom filters and views</h4>
             <p>Take a look at the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples'>wiki</a> to see how to add your own custom filters and views like:</p>
             <div class='row'>
@@ -75,7 +75,7 @@
                   <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/List-search-results'>Results lists</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <br />
             <a class='btn btn-primary' id='search' href='#'>
               <i class='glyphicon glyphicon-search'></i>
@@ -106,7 +106,7 @@
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.address.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyAjYIJDSpRo90YUDZNtLnSCTmuMHfLMAlo"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyC0aQ8wsGgzVahoV-fMP7RJR3ZD8fftJVQ"></script>
     <script type="text/javascript" src="js/maps_lib.js"></script>
     <script type='text/javascript'>
       //<![CDATA[
@@ -119,9 +119,9 @@
         
         $(function() {
           var myMap = new MapsLib({
-            fusionTableId:      "1m4Ez9xyTGfY2CU6O-UgEcPzlS0rnzLU93e4Faa0",
-            googleApiKey:       "AIzaSyAjYIJDSpRo90YUDZNtLnSCTmuMHfLMAlo",
-            locationColumn:     "geometry",
+            fusionTableId:      "1IRRwxOgO6O2LLVw0xN0utFKHl_fNtNJ97RnXO_Tm",
+            googleApiKey:       "AIzaSyC0aQ8wsGgzVahoV-fMP7RJR3ZD8fftJVQ",
+            locationColumn:     "LATITUDE",
             map_center:         [41.8781136, -87.66677856445312],
             locationScope:      "chicago"
           });
